@@ -24,6 +24,8 @@ jobs:
 
       - name: Gradle 설정
         uses: gradle/actions/setup-gradle@v3
+        with:
+          gradle-version: '8.4'
 
       - name: Debug APK 빌드
         run: gradle assembleDebug --no-daemon
